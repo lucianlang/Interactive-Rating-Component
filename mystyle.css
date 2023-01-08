@@ -1,0 +1,222 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution-txt {
+    font-size: 12px;
+}
+
+.icon-star {
+    height: auto;
+    width: 17px;
+    background-color: rgb(67, 70, 92);
+    padding: 10px;
+    border-radius: 100%;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.widget-container {
+    padding: 100px 0;
+}
+
+.rating-state {
+
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(45, 51, 65);
+    background: linear-gradient(180deg, rgba(45, 51, 65, 1) 6%, rgba(30, 32, 50, 1) 100%);
+    max-width: 300px;
+    padding: 28px;
+    border-radius: 25px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently */
+}
+
+@media (max-width: 767px) {
+
+    .rating-state,
+    .thank-you-start {
+        width: 70%;
+        max-width: 70%;
+    }
+
+    .widget-container {
+        padding: 80px 0;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+
+    .rating-state,
+    .thank-you-start {
+        height: 450px !important;
+        max-width: 400px !important;
+        padding: 35px !important;
+    }
+
+    .selected-heading {
+        font-size: 17px !important;
+    }
+
+    p {
+        font-size: 21px !important;
+    }
+
+    .rate-number {
+        font-size: 23px;
+    }
+
+    .widget-container {
+        padding: 250px 0;
+    }
+}
+
+.thank-you-start {
+    height: 350px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: rgb(45, 51, 65);
+    background: linear-gradient(180deg, rgba(45, 51, 65, 1) 6%, rgba(30, 32, 50, 1) 100%);
+    max-width: 300px;
+    padding: 28px;
+    border-radius: 25px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently */
+}
+
+.submit-button {
+    width: 100%;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 2px;
+    line-height: 17px;
+    font-weight: 700;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
+
+.thank-you-img {
+    width: 50%;
+    height: auto;
+    margin: 25px 0;
+}
+
+.selected-heading {
+    background-color: rgb(37, 37, 47);
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 13px;
+    color: hsl(25, 97%, 53%);
+    display: inline;
+    font-weight: 400;
+    margin: 0;
+}
+
+.rating-widget {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.rate-number {
+    color: hsl(216, 12%, 54%);
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: rgb(67, 70, 92);
+    margin: 10px 0;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    cursor: pointer;
+}
+
+.rate-number:hover {
+    background-color: rgb(117, 122, 157);
+    color: #FFF;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
+
+.rate-number-clicked {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 100%;
+    background-color: hsl(25, 97%, 53%);
+    color: #FFF;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
